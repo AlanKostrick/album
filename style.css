@@ -1,0 +1,50 @@
+
+
+.container{
+	width:100%;
+	min-height: 300px;
+	display: grid;
+	grid-template-rows: 100px auto 50px;
+}
+header{
+	grid-row:1/2;
+	display:flex;
+	justify-content: center;
+	align-content: center;
+}
+main{
+grid-row:2/3;
+background-color: lightgrey;
+display: grid;
+grid-template-rows:1fr auto;
+}
+.jumbotron{
+grid-row: 1/2;
+text-align: center;
+background-color: darkslategrey;
+}
+
+.album{
+	grid-row: 3/4;
+	background-color: dodgerblue;
+	display: flex;
+	justify-content: space-around;
+}
+
+.picture-box {
+	dispay: flex;
+	background-color: white;
+	flex-direction: column;
+}
+
+.jumbo-button {
+	display: flex;
+	align-self: flex-start;
+	background-color: yellow;
+}
+
+.copyright {
+	margin-left: auto;
+	align-self: flex-end;
+	background-color: pink;
+}
